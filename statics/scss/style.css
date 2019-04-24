@@ -1,0 +1,168 @@
+/* @mixin pc-layout {
+  @media screen and (min-width: 761px) {
+    @content;
+  }
+}
+
+@mixin sp-layout {
+  @media screen and (max-width: 760px) {
+    @content;
+  }
+} */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+input[type='text'],
+input[type='select'],
+input[type='submit'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 16px;
+  /* mobile firefox too! */
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  /* font-size: 14px; */
+  font-size: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+    * {
+  font-family: tbchibirgothicplusk-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+img { vertical-align: bottom; }
+
+input[type=text]{
+  width: auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  width: auto;
+  height: 40px;
+  font-size: 18px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 150px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-top: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+textarea, button {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+a { text-decoration: none; }
+
+iframe { border: none; }
+
+#hero {
+  height: 100%;
+  padding: 50px;
+}
+
+.form_{
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+.custom-select{
+  margin-top: 10px;
+}
+
+.box {
+  padding: 30px;
+  padding-left: 10%;
+}
+
+.sim_image {
+  width: 100%;
+  height: auto;
+}
+
+.table_ {
+  align-items: center;
+  @include pc-layout { width: 350px; };
+  @include sp-layout { width: 100%; };
+}
+.img_ {
+  width: 80%;
+  height: 50%;
+  @include pc-layout { width: 350px; };
+  @include sp-layout { width: 100%; };
+}
